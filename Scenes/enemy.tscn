@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://c5rrebyww7bg0"]
+
+[ext_resource type="Script" path="res://Scenes/Enemy.gd" id="1_yys62"]
+[ext_resource type="Material" uid="uid://glfa72gc4sog" path="res://Assets/red.tres" id="2_bowj5"]
+[ext_resource type="AudioStream" uid="uid://cb25hnilkjqkq" path="res://Assets/explosion (3).wav" id="3_drrh4"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_udtf6"]
+radius = 15.0
+height = 40.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7bf08"]
+radius = 15.0
+height = 40.0
+
+[node name="Enemy" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.2143, 4.90791, -45.0153)
+collision_layer = 128
+collision_mask = 0
+script = ExtResource("1_yys62")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("2_bowj5")
+mesh = SubResource("CapsuleMesh_udtf6")
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 512
+collision_mask = 512
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("CapsuleShape3D_7bf08")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_7bf08")
+
+[node name="Hit" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_drrh4")
+volume_db = 80.0
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="finished" from="Hit" to="." method="_on_hit_finished"]

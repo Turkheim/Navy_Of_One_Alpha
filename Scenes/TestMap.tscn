@@ -1,0 +1,1052 @@
+[gd_scene load_steps=8 format=3 uid="uid://cfbnc241b5o5n"]
+
+[ext_resource type="Shader" uid="uid://bcnb5rftx20vi" path="res://Assets/water.tres" id="1_kqwwj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x4fs1"]
+render_priority = 0
+shader = ExtResource("1_kqwwj")
+shader_parameter/WaveHeight = 0.5
+shader_parameter/WaterColor = Color(0, 0.10825, 0.243586, 1)
+shader_parameter/WaterColor2 = Color(2.88785e-07, 0.336549, 0.483431, 1)
+shader_parameter/Roughness = 0.1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_52fb5"]
+material = SubResource("ShaderMaterial_x4fs1")
+size = Vector2(50, 50)
+subdivide_width = 100
+subdivide_depth = 100
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cyoqc"]
+albedo_color = Color(0.503489, 0.389878, 0.305529, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_icqqy"]
+albedo_color = Color(0.55, 0.456042, 0.3245, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_pklwv"]
+radius = 15.0
+height = 60.0
+radial_segments = 16
+rings = 4
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pdx1q"]
+albedo_color = Color(0.24552, 0.44, 0.1408, 1)
+
+[node name="Level" type="Node3D"]
+
+[node name="River" type="Node3D" parent="."]
+
+[node name="Water" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -50)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water2" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -100)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water3" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, -50)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water4" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, -100)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water5" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, -50)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water6" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, -100)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water7" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, -50)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water8" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, -100)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water9" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 50)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water10" type="MeshInstance3D" parent="River"]
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water11" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 50)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water12" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water13" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 50)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water14" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 0)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water15" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 50)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Water16" type="MeshInstance3D" parent="River"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 0)
+mesh = SubResource("PlaneMesh_52fb5")
+skeleton = NodePath("../..")
+
+[node name="Shore" type="Node3D" parent="."]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.7366, 0, 67.2863)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D59" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.0139, 2.1833, 67.2863)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.9762, 4.70007, 49.8173)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.5083, 1.36932, 37.2178)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D17" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.3377, 1.36932, 69.9626)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D18" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.74747, 5.25485, 67.2657)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D60" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.863, 5.25485, 67.2657)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D19" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.13136, 1.79451, 70.4774)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D20" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.13136, 1.79451, 70.4774)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D21" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.3931, -2.84083, -124.582)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D33" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.8661, 1.48022, -129.969)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D69" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.478278, 0, -0.878208, 0, 1, 0, 0.878208, 0, 0.478278, 90.1489, -5.28177, -125.408)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D70" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.478278, 0, -0.878208, 0, 1, 0, 0.878208, 0, 0.478278, 101.802, -0.960735, -112.426)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D34" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6837, -0.822174, -120.541)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D35" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.4335, -6.06688, -119.064)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D36" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.0254, -5.66618, -124.582)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D37" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.1364, -2.84083, 73.9813)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D38" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.6094, 1.48022, 68.594)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D39" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.427, -0.822174, 78.0221)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D40" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.1767, -6.06688, 79.499)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D41" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83.7687, -5.66618, 73.9813)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D61" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.1115, 3.34579, 18.7273)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D62" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.6947, 4.31653, 32.2474)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D63" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.3856, -0.998566, 36.7764)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D42" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.640833, 0, 0.76768, 0, 1, 0, -0.76768, 0, 0.640833, -1.62028, 7.65034, 55.147)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D43" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.640833, 0, 0.76768, 0, 1, 0, -0.76768, 0, 0.640833, 3.51874, 1.48022, 40.584)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D44" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.640833, 0, 0.76768, 0, 1, 0, -0.76768, 0, 0.640833, 20.2521, 7.46309, 35.2507)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D45" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.640833, 0, 0.76768, 0, 1, 0, -0.76768, 0, 0.640833, 31.4789, -6.06688, 24.1063)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D46" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.640833, 0, 0.76768, 0, 1, 0, -0.76768, 0, 0.640833, 32.9691, -5.66618, 9.10141)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D47" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.107566, 0, -0.994198, 0, 1, 0, 0.994198, 0, 0.107566, -70.2469, -2.84083, -57.6309)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D48" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.107566, 0, -0.994198, 0, 1, 0, 0.994198, 0, 0.107566, -61.9352, 2.23339, -30.8924)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D49" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.107566, 0, -0.994198, 0, 1, 0, 0.994198, 0, 0.107566, -71.1135, -0.822174, -28.0756)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D50" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.107566, 0, -0.994198, 0, 1, 0, 0.994198, 0, 0.107566, -70.8877, -6.06688, -12.2584)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D51" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.107566, 0, -0.994198, 0, 1, 0, 0.994198, 0, 0.107566, -63.7249, -5.66618, 2.64961)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D22" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21372, -2.97598, -35.3158)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D23" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0926, 1.79451, -32.1041)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D64" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 112.524, 1.79451, -28.9346)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D65" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 121.387, 1.79451, -44.7457)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D66" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 119.974, -0.984013, -64.174)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D67" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 114.151, -5.72297, -79.6195)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D68" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108.432, 1.21875, -95.8923)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D57" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9914, 1.79451, -47.7457)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D58" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.7181, 1.79451, -37.0474)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D71" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.3176, 1.79451, 6.7173)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D24" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.7161, 1.36932, -64.332)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D25" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.3063, 5.25485, -67.0289)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D26" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.1852, 1.79451, -63.8172)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D27" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.8797, -3.24185, -1.69695)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D28" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.2856, 0.643683, -14.354)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D29" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 106.164, -2.81666, -11.1423)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D30" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.881477, 0, 0.472228, 0, 1, 0, -0.472228, 0, 0.881477, 92.6472, -4.36723, 69.1248)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D31" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.881477, 0, 0.472228, 0, 1, 0, -0.472228, 0, 0.881477, 105.998, -0.481698, 58.9131)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D32" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(0.881477, 0, 0.472228, 0, 1, 0, -0.472228, 0, 0.881477, 121.511, -3.94204, 54.2457)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.5346, 3.29653, 22.0626)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.3017, 7.62939e-06, -1.0899)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.9575, 4.70008, -18.5589)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D72" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.831, -1.17997, -6.59708)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.9134, 1.36933, -29.3392)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.5253, 3.29653, -52.2131)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.1502, 7.62939e-06, -77.8268)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D73" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.0129, 7.62939e-06, -57.2744)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D74" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.0118, -4.48758, -39.6478)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D10" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.4943, 4.70008, -95.2958)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D11" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.0264, 1.36933, -107.895)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D12" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.0527, 3.29653, -123.051)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D13" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.302, 7.62939e-06, 35.5117)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D14" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 122.957, 4.70008, 18.0427)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D52" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(-0.844281, 0, 0.5359, 0, 1, 0, -0.5359, 0, -0.844281, 5.84262, -4.36723, -109.925)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D53" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(-0.844281, 0, 0.5359, 0, 1, 0, -0.5359, 0, -0.844281, -9.60947, -0.481698, -116.539)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D54" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(-0.844281, 0, 0.5359, 0, 1, 0, -0.5359, 0, -0.844281, -21.2945, -3.94204, -127.76)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D55" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(-0.491147, 0, 0.871077, 0, 1, 0, -0.871077, 0, -0.491147, -35.5458, 7.62939e-06, -114.892)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_icqqy")
+
+[node name="CSGCylinder3D56" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(-0.491147, 0, 0.871077, 0, 1, 0, -0.871077, 0, -0.491147, -53.5405, 4.70008, -111.238)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D15" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.425, 1.36933, 5.44312)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGCylinder3D16" type="CSGCylinder3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 122.399, 3.29653, -9.71205)
+use_collision = true
+collision_layer = 128
+collision_mask = 128
+radius = 10.0
+height = 20.0
+sides = 16
+material = SubResource("StandardMaterial3D_cyoqc")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80.7776, 3.61382, 7.87193)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D17" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.71, 8.22558, -14.833)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D18" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.6054, 2.19765, -33.8591)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D19" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.71, -2.86166, -59.2197)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D20" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80.3966, 1.65022, -84.8862)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D39" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.272, 1.65022, -46.1519)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D21" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.3894, 11.2663, -112.911)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D22" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.3677, -0.879141, -125.739)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D23" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.1432, 1.72933, -137.072)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D24" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.63587, 1.72933, -131.35)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.1912, 13.8493, 25.3685)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D26" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150.245, 8.22558, -78.6244)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D27" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 134.636, 13.8493, -38.4228)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80.4136, 3.61382, 48.3288)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D14" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.42, 3.61382, 5.02768)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D15" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 132.007, -1.16113, 22.5243)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D36" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.9564, -1.16113, 88.3873)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D33" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 125.615, -6.33685, 64.3524)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D34" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.6015, 2.11578, 89.9555)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D35" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110.799, -1.77612, 69.3198)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D31" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 114.681, -1.90116, -108.14)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D16" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.784, -2.23873, 45.4845)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D4" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.2472, 11.0494, 75.4444)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D8" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(0.325849, 0, 0.945422, 0, 1, 0, -0.945422, 0, 0.325849, -9.26137, 2.20116, 83.4475)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D9" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(0.325849, 0, 0.945422, 0, 1, 0, -0.945422, 0, 0.325849, 14.3284, 10.2145, 85.4668)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D10" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(0.325849, 0, 0.945422, 0, 1, 0, -0.945422, 0, 0.325849, 42.2993, -1.12883, 87.5272)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D37" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.2508, 2.11578, 89.8494)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D38" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(0.325849, 0, 0.945422, 0, 1, 0, -0.945422, 0, 0.325849, -56.553, -1.12883, 87.4211)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D11" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(0.325849, 0, 0.945422, 0, 1, 0, -0.945422, 0, 0.325849, 41.4952, 12.1874, -138.858)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D29" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(0.325849, 0, 0.945422, 0, 1, 0, -0.945422, 0, 0.325849, 109.624, 3.58416, -131.32)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D30" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(0.325849, 0, 0.945422, 0, 1, 0, -0.945422, 0, 0.325849, 127.404, -2.41961, -92.5448)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D12" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(0.325849, 0, 0.945422, 0, 1, 0, -0.945422, 0, 0.325849, 65.085, -2.42755, -136.839)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D25" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(0.325849, 0, 0.945422, 0, 1, 0, -0.945422, 0, 0.325849, 16.5591, -2.42755, -143.138)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D13" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(0.325849, 0, 0.945422, 0, 1, 0, -0.945422, 0, 0.325849, 93.0558, 2.20116, -134.779)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D5" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.7236, 3.15199, -39.853)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D6" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.4457, 1.71202, 26.4838)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D32" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.4457, 6.01801, 8.28945)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D7" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 132.732, 9.83335, -64.4626)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
+
+[node name="CSGMesh3D28" type="CSGMesh3D" parent="Shore"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 123.012, 2.60767, -21.53)
+mesh = SubResource("CapsuleMesh_pklwv")
+material = SubResource("StandardMaterial3D_pdx1q")
