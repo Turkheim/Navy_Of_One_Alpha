@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw43ch3sj1qew"
 path.s3tc="res://.godot/imported/nois.png-299b39149685258188d0712aa66b92f4.s3tc.ctex"
+path.etc2="res://.godot/imported/nois.png-299b39149685258188d0712aa66b92f4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/nois.png"
-dest_files=["res://.godot/imported/nois.png-299b39149685258188d0712aa66b92f4.s3tc.ctex"]
+dest_files=["res://.godot/imported/nois.png-299b39149685258188d0712aa66b92f4.s3tc.ctex", "res://.godot/imported/nois.png-299b39149685258188d0712aa66b92f4.etc2.ctex"]
 
 [params]
 

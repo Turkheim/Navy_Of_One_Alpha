@@ -12,8 +12,8 @@ var playedHitSound = false
 @onready var hand_handle_l = $BoatInteractables/LeverSnapLeft/LeverOrigin/InteractableLeverA/HingeBody/NavigationLeverLeft/Hand_Nails_low_L/Armature/Skeleton3D/mesh_Hand_Nails_low_L
 @onready var hand_l = $XROrigin3D/XRController_Left/LeftHandTurk/Hand_Nails_low_L/Armature/Skeleton3D/mesh_Hand_Nails_low_L
 @onready var hand_r = $XROrigin3D/XRController_Right/RightHandTurk/Hand_Nails_low_R/Armature/Skeleton3D/mesh_Hand_Nails_low_R
-
-
+@onready var hand_wheel_r =$BoatInteractables/CannonWheelPitch/LeverOrigin/InteractableHingePitch/HingeBody/Hand_Nails_low_R2/Armature/Skeleton3D/mesh_Hand_Nails_low_R
+@onready var hand_wheel_l =$BoatInteractables/CannonWheelJaw/LeverOrigin/InteractableHingeJaw/HingeBody/Hand_Nails_low_L2/Armature/Skeleton3D/mesh_Hand_Nails_low_L
 
 
 @export var bullet = load("res://Scenes/bullet.tscn")
@@ -110,3 +110,20 @@ func _on_interactable_lever_a_grabbed(interactable):
 func _on_interactable_lever_a_released(interactable):
 	hand_handle_l.visible = false
 	hand_l.visible = true
+
+
+#func _on_interactable_hinge_jaw_grabbed(interactable):
+	#hand_wheel_l.visible = true
+	#hand_l.visible = false
+	#
+#func _on_interactable_hinge_jaw_released(interactable):
+	#hand_wheel_l.visible = false
+	#hand_l.visible = true
+#
+#func _on_interactable_hinge_pitch_grabbed(interactable):
+	#hand_wheel_r.visible = true
+	#hand_r.visible = false
+#
+#func _on_interactable_hinge_pitch_released(interactable):
+	#hand_wheel_r.visible = false
+	#hand_r.visible = true

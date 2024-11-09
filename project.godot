@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Navy_Of_One_Alpha"
 run/main_scene="res://Scenes/test_level.tscn"
-config/features=PackedStringArray("4.2", "Mobile")
+config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://Assets/icon.svg"
 
 [autoload]
@@ -23,13 +23,20 @@ XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd
 
 enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg")
 
+[godot_xr_tools]
+
+player/standard_height=1.75
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true
 
 [xr]
 
 openxr/enabled=true
 openxr/default_action_map="res://Assets/openxr_action_map.tres"
+openxr/extensions/hand_tracking=false
 shaders/enabled=true
