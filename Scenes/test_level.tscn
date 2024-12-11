@@ -1859,7 +1859,8 @@ transform = Transform3D(1, -1.06581e-14, 0, 1.06581e-14, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="InteractableLeverB" type="Node3D" parent="BoatCharacter/BoatInteractables/LeverSnapRight/LeverOrigin"]
 script = ExtResource("14_j6v76")
-hinge_steps = 5.0
+hinge_steps = 3.0
+default_on_release = true
 
 [node name="HingeBody" type="StaticBody3D" parent="BoatCharacter/BoatInteractables/LeverSnapRight/LeverOrigin/InteractableLeverB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
@@ -2114,7 +2115,8 @@ transform = Transform3D(1, -1.06581e-14, 0, 1.06581e-14, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="InteractableLeverA" type="Node3D" parent="BoatCharacter/BoatInteractables/LeverSnapLeft/LeverOrigin"]
 script = ExtResource("14_j6v76")
-hinge_steps = 5.0
+hinge_steps = 3.0
+default_on_release = true
 
 [node name="HingeBody" type="StaticBody3D" parent="BoatCharacter/BoatInteractables/LeverSnapLeft/LeverOrigin/InteractableLeverA"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
