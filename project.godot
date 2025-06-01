@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Navy_Of_One_Alpha"
 run/main_scene="res://Scenes/test_level.tscn"
-config/features=PackedStringArray("4.3", "Mobile")
+config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://Assets/icon.svg"
 
 [autoload]
@@ -38,5 +38,4 @@ textures/vram_compression/import_etc2_astc=true
 
 openxr/enabled=true
 openxr/default_action_map="res://Assets/openxr_action_map.tres"
-openxr/extensions/hand_tracking=false
 shaders/enabled=true

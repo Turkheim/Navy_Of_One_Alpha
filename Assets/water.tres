@@ -120,7 +120,7 @@ uniform vec4 WaterColor : source_color = vec4(0.000000, 0.111885, 0.250234, 1.00
 uniform vec4 WaterColor2 : source_color = vec4(0.714955, 0.888465, 1.000000, 1.000000);
 uniform sampler2D tex_frg_3;
 uniform sampler2D tex_frg_17;
-uniform float Roughness = 0;
+uniform float Roughness = 0.0;
 
 
 

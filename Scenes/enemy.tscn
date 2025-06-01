@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://c5rrebyww7bg0"]
 
-[ext_resource type="Script" path="res://Scenes/Enemy.gd" id="1_yys62"]
+[ext_resource type="Script" uid="uid://dkucl6x0svvh1" path="res://Scenes/Enemy.gd" id="1_yys62"]
 [ext_resource type="Material" uid="uid://glfa72gc4sog" path="res://Assets/red.tres" id="2_bowj5"]
 [ext_resource type="AudioStream" uid="uid://cb25hnilkjqkq" path="res://Assets/explosion (3).wav" id="3_drrh4"]
 
