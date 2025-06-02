@@ -14,6 +14,9 @@ var playedHitSound = false
 @onready var hand_r = $XROrigin3D/XRController_Right/RightHandTurk/Hand_Nails_low_R/Armature/Skeleton3D/mesh_Hand_Nails_low_R
 @onready var hand_wheel_r =$BoatInteractables/CannonWheelPitch/LeverOrigin/InteractableHingePitch/HingeBody/Hand_Nails_low_R2/Armature/Skeleton3D/mesh_Hand_Nails_low_R
 @onready var hand_wheel_l =$BoatInteractables/CannonWheelJaw/LeverOrigin/InteractableHingeJaw/HingeBody/Hand_Nails_low_L2/Armature/Skeleton3D/mesh_Hand_Nails_low_L
+@onready var muzzle = $BoatAnimated/CannonAxis/CAnnon/Pipe/Muzzle
+@onready var cannon_action = $BoatAnimated/CannonAxis/CAnnon/CannonAction
+
 
 
 @export var bullet = load("res://Scenes/bullet.tscn")
@@ -78,7 +81,9 @@ func _on_interactable_area_button_button_pressed(button):
 		$Fire.play()
 		canShoot =false
 		$Timer.start()
-
+		muzzle.restart()
+		cannon_action.play("CannonShoot")
+		
 func crearProyectil():
 	var instance
 	instance = bullet.instantiate()
