@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://gfoxgdw0jjvb"
 path.s3tc="res://.godot/imported/NewBoat_Boat_T.png-fcdd0cf52e7c0e690ff7feba0fee2d31.s3tc.ctex"
-path.etc2="res://.godot/imported/NewBoat_Boat_T.png-fcdd0cf52e7c0e690ff7feba0fee2d31.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/NewBoat/NewBoat_Boat_T.png"
-dest_files=["res://.godot/imported/NewBoat_Boat_T.png-fcdd0cf52e7c0e690ff7feba0fee2d31.s3tc.ctex", "res://.godot/imported/NewBoat_Boat_T.png-fcdd0cf52e7c0e690ff7feba0fee2d31.etc2.ctex"]
+dest_files=["res://.godot/imported/NewBoat_Boat_T.png-fcdd0cf52e7c0e690ff7feba0fee2d31.s3tc.ctex"]
 
 [params]
 

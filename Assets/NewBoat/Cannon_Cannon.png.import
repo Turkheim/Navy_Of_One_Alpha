@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwtfmtny1i4xk"
 path.s3tc="res://.godot/imported/Cannon_Cannon.png-7f5b459b2805d3bce24b38be7635648e.s3tc.ctex"
-path.etc2="res://.godot/imported/Cannon_Cannon.png-7f5b459b2805d3bce24b38be7635648e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/NewBoat/Cannon_Cannon.png"
-dest_files=["res://.godot/imported/Cannon_Cannon.png-7f5b459b2805d3bce24b38be7635648e.s3tc.ctex", "res://.godot/imported/Cannon_Cannon.png-7f5b459b2805d3bce24b38be7635648e.etc2.ctex"]
+dest_files=["res://.godot/imported/Cannon_Cannon.png-7f5b459b2805d3bce24b38be7635648e.s3tc.ctex"]
 
 [params]
 

@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckdx50ufdedxt"
 path.s3tc="res://.godot/imported/CannonWheel_Handle.png-2a9ab66700ec7b094c094492ceac5547.s3tc.ctex"
-path.etc2="res://.godot/imported/CannonWheel_Handle.png-2a9ab66700ec7b094c094492ceac5547.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/NewBoat/CannonWheel_Handle.png"
-dest_files=["res://.godot/imported/CannonWheel_Handle.png-2a9ab66700ec7b094c094492ceac5547.s3tc.ctex", "res://.godot/imported/CannonWheel_Handle.png-2a9ab66700ec7b094c094492ceac5547.etc2.ctex"]
+dest_files=["res://.godot/imported/CannonWheel_Handle.png-2a9ab66700ec7b094c094492ceac5547.s3tc.ctex"]
 
 [params]
 

@@ -20,7 +20,6 @@ subdivide_depth = 100
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dll40"]
 resource_name = "Yellow"
 cull_mode = 2
-shading_mode = 0
 vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("2_xh66l")
 
