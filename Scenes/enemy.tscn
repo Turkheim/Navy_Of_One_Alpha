@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dkucl6x0svvh1" path="res://Scenes/Enemy.gd" id="1_yys62"]
 [ext_resource type="Material" uid="uid://glfa72gc4sog" path="res://Assets/red.tres" id="2_bowj5"]
-[ext_resource type="AudioStream" uid="uid://cb25hnilkjqkq" path="res://Assets/explosion (3).wav" id="3_drrh4"]
+[ext_resource type="AudioStream" uid="uid://deyis78q1irkl" path="res://Assets/Boom.wav" id="3_afpow"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_udtf6"]
 radius = 15.0
@@ -33,7 +33,7 @@ shape = SubResource("CapsuleShape3D_7bf08")
 shape = SubResource("CapsuleShape3D_7bf08")
 
 [node name="Hit" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("3_drrh4")
+stream = ExtResource("3_afpow")
 volume_db = 80.0
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
