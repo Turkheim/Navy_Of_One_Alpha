@@ -22,6 +22,7 @@ resource_name = "Yellow"
 cull_mode = 2
 vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("2_xh66l")
+texture_filter = 0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4eftb"]
 _surfaces = [{
@@ -401,6 +402,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -411,6 +414,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff14"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff14/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -421,6 +426,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff13"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff13/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -431,6 +438,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff12"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff12/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -441,6 +450,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff15"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff15/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -451,6 +462,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff11"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff11/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -461,6 +474,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff10"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff10/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -471,6 +486,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff9"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff9/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -481,6 +498,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff8"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff8/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -491,6 +510,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff7"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff7/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -501,6 +522,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff6"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -511,16 +534,20 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff5"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
 
 [node name="Cliff4" type="MeshInstance3D" parent="Shore/rocks"]
-transform = Transform3D(5, 0, 0, 0, 7, 0, 0, 0, 5, -47.0383, -3.92521, -42.12)
+transform = Transform3D(5, 0, 0, 0, 7, 0, 0, 0, 5, -42.0383, -3.92521, -42.12)
 mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff4"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -531,6 +558,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff3"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -541,6 +570,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_001"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_001/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -551,6 +582,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_055"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_055/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -561,6 +594,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_052"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_052/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -571,6 +606,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_051"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_051/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -581,16 +618,20 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_048"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_048/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
 
 [node name="Cliff_045" type="MeshInstance3D" parent="Shore/rocks"]
-transform = Transform3D(5, 0, 0, 0, 7, 0, 0, 0, 5, 28.9405, -3.16146, -59.9911)
+transform = Transform3D(5, 0, 0, 0, 7, 0, 0, 0, 5, 28.9405, -3.16146, -66.9911)
 mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_045"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_045/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -601,6 +642,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_037"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_037/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -611,6 +654,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_035"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_035/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -621,6 +666,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_031"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_031/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -631,6 +678,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_027"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_027/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -641,6 +690,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_023"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_023/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -651,6 +702,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_018"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_018/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -661,6 +714,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_014"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_014/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -671,6 +726,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_009"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_009/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -681,6 +738,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_002"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_002/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -691,6 +750,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_053"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_053/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -701,6 +762,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_049"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_049/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -711,6 +774,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_046"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_046/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -721,6 +786,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_040"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_040/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -731,6 +798,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_038"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_038/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -741,6 +810,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_036"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_036/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -751,6 +822,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_033"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_033/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -761,6 +834,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_030"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_030/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -771,6 +846,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_025"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_025/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -781,16 +858,20 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_021"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_021/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
 
 [node name="Cliff_016" type="MeshInstance3D" parent="Shore/rocks"]
-transform = Transform3D(2.27369, 0, 5.58814, 0, 7, 0, -3.93814, 0, 3.22631, 5.03644, -5.04212, -44.9942)
+transform = Transform3D(3.21865e-06, 0, 6.45263, 0, 7, 0, -4.54737, 0, -3.57628e-06, 2.03644, -5.04212, -44.9942)
 mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_016"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_016/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -801,6 +882,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_012"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_012/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -811,6 +894,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_010"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_010/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -821,6 +906,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_003"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_003/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -831,6 +918,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_054"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_054/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -841,6 +930,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_050"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_050/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -851,6 +942,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_047"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_047/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -861,6 +954,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_044"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_044/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -871,6 +966,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_043"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_043/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -881,6 +978,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_042"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_042/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -891,6 +990,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_041"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_041/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -901,6 +1002,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_039"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_039/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -911,6 +1014,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_034"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_034/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -921,6 +1026,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_032"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_032/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -931,6 +1038,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_029"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_029/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -941,6 +1050,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_028"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_028/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -951,6 +1062,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_026"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_026/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -961,6 +1074,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_024"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_024/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -971,6 +1086,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_022"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_022/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -981,6 +1098,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_020"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_020/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -991,6 +1110,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_019"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_019/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -1001,6 +1122,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_017"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_017/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -1011,6 +1134,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_015"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_015/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -1021,16 +1146,20 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_013"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_013/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
 
 [node name="Cliff_011" type="MeshInstance3D" parent="Shore/rocks"]
-transform = Transform3D(1.09313, 0, -7.62867, 0, 7, 0, 4.07963, 0, 2.0441, -63.0028, 2.1456, -30.8955)
+transform = Transform3D(1.09313, 0, -7.62867, 0, 7, 0, 4.07963, 0, 2.0441, -61.0028, 2.1456, -30.8955)
 mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_011"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_011/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -1041,6 +1170,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_008"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_008/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -1051,6 +1182,8 @@ mesh = SubResource("ArrayMesh_3r3mn")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff2"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n6t57")
@@ -1061,6 +1194,8 @@ mesh = SubResource("ArrayMesh_joj4h")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_005"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_005/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qg828")
@@ -1071,6 +1206,8 @@ mesh = SubResource("ArrayMesh_vcou2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_006"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_006/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0314m")
@@ -1081,6 +1218,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_007"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_007/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")
@@ -1091,6 +1230,8 @@ mesh = SubResource("ArrayMesh_ws1c7")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shore/rocks/Cliff_004"]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shore/rocks/Cliff_004/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_00jar")

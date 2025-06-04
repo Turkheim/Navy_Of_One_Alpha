@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Navy Of One Offline"
+config/name="Navy Of One Online"
 run/main_scene="uid://bs5h73qpvgqgf"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
@@ -26,7 +26,9 @@ enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg")
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+textures/decals/filter=0
 
 [xr]
 

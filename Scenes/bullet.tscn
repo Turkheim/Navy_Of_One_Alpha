@@ -15,6 +15,7 @@ point_count = 2
 curve = SubResource("Curve_4mw4s")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_oduel"]
+gravity = Vector3(0, 0, 0)
 scale_curve = SubResource("CurveTexture_xjght")
 
 [sub_resource type="SphereMesh" id="SphereMesh_ycag2"]
@@ -31,5 +32,7 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 
 mesh = SubResource("SphereMesh_4mw4s")
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+amount = 16
+lifetime = 0.5
 process_material = SubResource("ParticleProcessMaterial_oduel")
 draw_pass_1 = SubResource("SphereMesh_ycag2")
